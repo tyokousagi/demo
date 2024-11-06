@@ -19,14 +19,4 @@ public class DemoApplication {
 	public String test() {
 		return "index";
 	}
-
-	@GetMapping("/hello")
-	public String hello() {
-		return "hello";
-	}
-
-	@GetMapping("/submit")
-	public String submit() {
-		return "submit";
-	}
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+</head>
+
+<body>
+    <h1>ユーザー名を入力してね</h1>
+    <form action="#" th:action="@{/submitForm}" th:object="${user}" method="post">
+        <label for="name">ユーザー名:</label>
+        <input type="text" id="name" th:field="*{name}" /> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
